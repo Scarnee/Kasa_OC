@@ -1,5 +1,19 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    padding: 45px, 0px, 0px, 0px;
+    gap: 50px;
+}
+#root{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
 a:visited {
     text-decoration: none;
