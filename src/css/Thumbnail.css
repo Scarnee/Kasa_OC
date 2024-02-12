@@ -1,12 +1,17 @@
 .gallery {
   display: grid;
-  width: 86%;
+  width: 85%;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 10%;
-  column-gap: 4.8%;
+  row-gap: 5%;
+  column-gap: 2.5%;
   background-color: #f6f6f6;
   border-radius: 25px;
-  padding: 8%;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 50px;
 }
 
 .image-container {

@@ -3,7 +3,7 @@ import LocationList from "../components/LocationList";
 import Footer from "../components/Footer";
 import Banner from "../assets/banner.jpg";
 
-function Root() {
+function Home() {
     return (
         <div className="main">
             <Header />
@@ -18,4 +18,4 @@ function Root() {
     );
 }
 
-export default Root;
+export default Home;
