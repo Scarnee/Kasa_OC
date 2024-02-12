@@ -7,8 +7,8 @@ function Header() {
             <img src={Logo} alt="logoKasa"></img>
             <nav className="navigationBar">
                 <ul>
-                    <li><a href='accueil'>Accueil</a></li>
-                    <li><a href='a-propos'>A Propos</a></li>
+                    <li><a href='../pages/main.jsx'>Accueil</a></li>
+                    <li><a href='../pages/about.jsx'>A Propos</a></li>
                 </ul>
             </nav>
         </div>

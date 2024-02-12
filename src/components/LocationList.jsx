@@ -10,9 +10,11 @@ const LocationList = () => {
         setLocationList(modifiedData);
     }, []);
 
+    const reducedArray = locationList.filter((item, index) => index < 6)
+
     return (
         <div className="gallery">
-            {locationList.map((location) => (
+            {reducedArray.map((location) => (
                 <Thumbnail id={location.id} title={location.title} cover={location.cover} />
             ))}
         </div>

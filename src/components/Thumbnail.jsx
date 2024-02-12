@@ -3,10 +3,11 @@ import   '../css/Thumbnail.css'
 
 function Thumbnail({ id, title, cover }) {
     return (
-        <div id={id} className="image-container">
+        <a href="../pages/location"  id={id} className="image-container">
+            <div className="gradient"></div>
             <p className='image-title'>{title}</p>
             <img src={cover}></img>
-        </div>
+        </a>
     );
 }
 
