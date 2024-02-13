@@ -4,10 +4,16 @@ body {
   padding: 45px, 0px, 0px, 0px;
   gap: 50px;
   margin: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 
 #root {
+  height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .bannerContainer {
@@ -53,6 +59,7 @@ body {
 }
 
 .main {
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;

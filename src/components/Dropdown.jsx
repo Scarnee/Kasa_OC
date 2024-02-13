@@ -1,6 +1,8 @@
 import * as React from "react";
+import Arrow from '../assets/arrow.svg'
 
-function Dropdown() {
+
+function Dropdown(props) {
     const [open, setOpen] = React.useState(false);
 
     function handleOpen() {
@@ -9,18 +11,10 @@ function Dropdown() {
 
     return (
         <div className="dropdown">
-            <button onClick={handleOpen}>Dropdown</button>
+            <button onClick={handleOpen} className={"btnValeurs" + (open ? " btnOpen":"")}><img src={Arrow} alt="arrow"></img></button>
             {open ? (
-                <ul className="menu">
-                    <li className="menu-item">
-                        <button>Menu 1</button>
-                    </li>
-                    <li className="menu-item">
-                        <button>Menu 2</button>
-                    </li>
-                </ul>
+                <div>{props.text}</div>
             ) : null}
-            {open ? <div>Is Open</div> : <div>Is Closed</div>}
         </div>
     );
 }
