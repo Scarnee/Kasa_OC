@@ -16,8 +16,6 @@ body {
   align-items: center;
 }
 
-
-
 .main {
   height: 100%;
   width: 100%;
@@ -42,6 +40,4 @@ a:focus {
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

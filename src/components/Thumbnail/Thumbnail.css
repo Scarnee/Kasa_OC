@@ -3,7 +3,8 @@
   width: 85%;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5%;
-  column-gap: 2.5%;
+  -moz-column-gap: 2.5%;
+       column-gap: 2.5%;
   background-color: #f6f6f6;
   border-radius: 25px;
   margin-top: 50px;
@@ -41,9 +42,8 @@
 }
 
 .gallery img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
-}
-
-/*# sourceMappingURL=Thumbnail.css.map */
+}/*# sourceMappingURL=Thumbnail.css.map */
