@@ -1,0 +1,47 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropdownTop {
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 20px 10px 15px;
+}
+
+.dropdownTitle {
+  margin: 0;
+}
+
+.btnValeurs {
+  border: none;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: transparent;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btnValeurs.btnOpen {
+  transform: rotate(-180deg);
+}
+
+.dropdownText {
+  background-color: transparent;
+  color: black;
+  text-align: left;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/*# sourceMappingURL=dropdown.css.map */

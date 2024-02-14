@@ -1,5 +1,5 @@
 import React from "react";
-import   '../css/Thumbnail.css'
+import   './Thumbnail.css'
 
 function Thumbnail({ id, title, cover }) {
     return (
@@ -10,5 +10,6 @@ function Thumbnail({ id, title, cover }) {
         </a>
     );
 }
-
+{/*utiliser Link to
+utiliser literal de gabarit pour URL*/}
 export default Thumbnail;
