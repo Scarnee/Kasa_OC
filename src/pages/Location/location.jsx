@@ -9,6 +9,7 @@ import React, { useState, useEffect } from "react";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
+import Tags from "../../components/Tags/Tags";
 
 function Location() {
     let { id } = useParams();
@@ -20,8 +21,6 @@ function Location() {
         setEquipments(object.equipments);
     }, []);
 
-    console.log(equipments);
-
     return (
         <div className="mainLocation">
             <Header />
@@ -29,8 +28,8 @@ function Location() {
             <div className="informations">
                 <Title title={object.title} location={object.location}/>
                 <Host picture={object.host.picture} name={object.host.name}/>
-                {/*<Tags />
-                <Rating />*/}
+                <Tags tagList={object.tags}/>
+                {/*<Rating />*/}
             </div>  
             <div className="details">
                 <Dropdown title="Description" text={object.description} />
