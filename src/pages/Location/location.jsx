@@ -10,6 +10,7 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
+import Rating from "../../components/Rating/Rating";
 
 function Location() {
     let { id } = useParams();
@@ -24,13 +25,17 @@ function Location() {
     return (
         <div className="mainLocation">
             <Header />
-            <Carrousel Array={object.pictures}/>
+            <Carrousel Array={object.pictures} />
             <div className="informations">
-                <Title title={object.title} location={object.location}/>
-                <Host picture={object.host.picture} name={object.host.name}/>
-                <Tags tagList={object.tags}/>
-                {/*<Rating />*/}
-            </div>  
+                <div className="informationsLeft">
+                    <Title title={object.title} location={object.location} />
+                    <Tags tagList={object.tags} />
+                </div>
+                <div className="informationsRight">
+                    <Host picture={object.host.picture} name={object.host.name} />
+                    <Rating rating={object.rating} />
+                </div>
+            </div>
             <div className="details">
                 <Dropdown title="Description" text={object.description} />
                 <Dropdown

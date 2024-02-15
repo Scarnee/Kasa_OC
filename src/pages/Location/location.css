@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  gap: 30px;
 }
 .mainLocation .details {
   display: flex;
@@ -21,5 +22,22 @@
   text-align: left;
 }
 .mainLocation .informations {
+  display: flex;
+  flex-direction: row;
   width: 90%;
+}
+.mainLocation .informations .informationsLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: start;
+  gap: 15px;
+}
+.mainLocation .informations .informationsRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: end;
 }/*# sourceMappingURL=location.css.map */

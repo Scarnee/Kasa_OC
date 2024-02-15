@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    gap: 30px;
     .details{
         display: flex;
         flex-direction: row;
@@ -20,6 +21,24 @@
         }
     }
     .informations{
+        display: flex;
+        flex-direction: row;
         width: 90%;
+        .informationsLeft{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50%;
+            align-items: start;
+            gap: 15px;
+        }
+        .informationsRight{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50%;
+            align-items: end;
+
+        }
     }
 }
