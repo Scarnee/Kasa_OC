@@ -7,6 +7,8 @@ import "./location.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import React, { useState, useEffect } from "react";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import Title from "../../components/Title/Title";
+import Host from "../../components/Host/Host";
 
 function Location() {
     let { id } = useParams();
@@ -24,8 +26,12 @@ function Location() {
         <div className="mainLocation">
             <Header />
             <Carrousel Array={object.pictures}/>
-            <p>oui</p>
-            <p>{object.title}</p>
+            <div className="informations">
+                <Title title={object.title} location={object.location}/>
+                <Host picture={object.host.picture} name={object.host.name}/>
+                {/*<Tags />
+                <Rating />*/}
+            </div>  
             <div className="details">
                 <Dropdown title="Description" text={object.description} />
                 <Dropdown

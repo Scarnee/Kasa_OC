@@ -1,0 +1,17 @@
+.host {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.host .hostName {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+.host .hostPicture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}/*# sourceMappingURL=host.css.map */
