@@ -1,5 +1,22 @@
-.mainLocation{
+.mainLocation {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    .details{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        width: 90%;
+    }
+    .dropdown ul {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        li {
+            text-align: left;
+        }
+    }
 }

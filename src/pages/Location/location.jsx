@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import "./location.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import React, { useState, useEffect } from "react";
+import Carrousel from "../../components/Carrousel/Carrousel";
 
 function Location() {
     let { id } = useParams();
@@ -22,19 +23,22 @@ function Location() {
     return (
         <div className="mainLocation">
             <Header />
+            <Carrousel Array={object.pictures}/>
             <p>oui</p>
             <p>{object.title}</p>
-            <Dropdown title="Description" text={object.description} />
-            <Dropdown
-                title="Equipements"
-                text={
-                    <ul>
-                        {equipments.map((equipment) => (
-                            <li>{equipment}</li>
-                        ))}
-                    </ul>
-                }
-            />
+            <div className="details">
+                <Dropdown title="Description" text={object.description} />
+                <Dropdown
+                    title="Equipements"
+                    text={
+                        <ul>
+                            {equipments.map((equipment) => (
+                                <li>{equipment}</li>
+                            ))}
+                        </ul>
+                    }
+                />
+            </div>
             <Footer />
         </div>
     );

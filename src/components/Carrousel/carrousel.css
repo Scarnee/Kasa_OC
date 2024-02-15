@@ -1,0 +1,69 @@
+.carrousel {
+  width: 90%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.carrousel .hidden {
+  display: none;
+}
+.carrousel .imgCarrousel {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
+}
+.carrousel .btnIncrease {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  right: 0%;
+  width: 10%;
+  padding: 0;
+  border-radius: 0px 25px 25px 0px;
+}
+.carrousel .btnIncrease img {
+  height: 83px;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  opacity: 0.87;
+}
+.carrousel .btnIncrease:hover {
+  background: transparent;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+.carrousel .btnDecrease {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  left: 0%;
+  width: 10%;
+  padding: 0;
+  border-radius: 25px 0px 0px 25px;
+}
+.carrousel .btnDecrease img {
+  height: 83px;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  opacity: 0.87;
+}
+.carrousel .btnDecrease:hover {
+  background: transparent;
+  background: linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+.carrousel .countCarrousel {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 10%;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}/*# sourceMappingURL=carrousel.css.map */
