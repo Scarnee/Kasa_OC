@@ -2,6 +2,7 @@ import Thumbnail from "../Thumbnail/Thumbnail";
 const response= await fetch("data.json")
 const data = await response.json()
 import React, { useState, useEffect } from "react";
+import './locationlist.css'
 
 
 const LocationList = () => {

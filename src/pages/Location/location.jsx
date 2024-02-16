@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
-import Header from "../../components/Header/Header";
 const response = await fetch("data.json");
 const data = await response.json();
-import Footer from "../../components/Footer/Footer";
 import "./location.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import React, { useState, useEffect } from "react";
@@ -24,7 +22,6 @@ function Location() {
 
     return (
         <div className="mainLocation">
-            <Header />
             <Carrousel Array={object.pictures} />
             <div className="informations">
                 <div className="informationsLeft">
@@ -49,7 +46,6 @@ function Location() {
                     }
                 />
             </div>
-            <Footer />
         </div>
     );
 }

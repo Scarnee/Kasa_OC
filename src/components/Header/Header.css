@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,12 +7,10 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
-img {
+header img {
   height: 100%;
 }
-
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,16 +18,14 @@ ul {
   height: 34px;
   text-align: right;
 }
-
-a {
+header a {
   text-decoration: none;
   color: black;
   font-size: 24px;
   font-weight: 500;
   align-items: center;
 }
-
-li {
+header li {
   text-align: right;
   list-style-type: none;
 }/*# sourceMappingURL=Header.css.map */

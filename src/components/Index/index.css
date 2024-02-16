@@ -1,6 +1,13 @@
 body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
+}
+body #root {
+  display: flex;
   padding: 45px, 0px, 0px, 0px;
   gap: 50px;
   margin: 0;
@@ -8,15 +15,7 @@ body {
   height: 100%;
   align-items: center;
 }
-
-#root {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.main {
+body .main {
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,20 +23,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-a:visited {
+body a:visited {
   text-decoration: none;
 }
-
-a:hover {
+body a:hover {
   text-decoration: none;
 }
-
-a:focus {
+body a:focus {
   text-decoration: none;
 }
-
-a:hover,
-a:active {
+body a:hover,
+body a:active {
   text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

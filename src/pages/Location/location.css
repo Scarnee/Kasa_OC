@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   gap: 30px;
+  margin-bottom: 50px;
 }
 .mainLocation .details {
   display: flex;
