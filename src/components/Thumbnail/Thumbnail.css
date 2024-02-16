@@ -14,16 +14,21 @@
 .image-container .image-title {
   position: absolute;
   width: 88%;
-  height: 15%;
-  top: 79%;
   left: 6%;
   font-weight: 700;
   font-size: 18px;
   color: white;
+  margin: 0;
+  bottom: 2.5%;
 }
 .image-container img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 460px) {
+  .image-container {
+    aspect-ratio: 335/255;
+  }
 }/*# sourceMappingURL=Thumbnail.css.map */

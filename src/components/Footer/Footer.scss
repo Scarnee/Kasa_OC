@@ -7,17 +7,21 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
-}
+    img {
+        height: 40px;
+        fill: #ff0000;
+    }
 
-footer img {
-    height: 40px;
-    fill: #ff0000;
-}
-
-footer p {
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 34.224px */
+    p {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 34.224px */
+    }
+    @media (max-width: 460px) {
+        p {
+            font-size: 12px;
+        }
+    }
 }

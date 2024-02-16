@@ -1,16 +1,18 @@
 .gallery {
   display: grid;
   width: 85%;
+  height: -moz-fit-content;
+  height: fit-content;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 5%;
-  -moz-column-gap: 2.5%;
-       column-gap: 2.5%;
+  gap: 25px;
   background-color: #f6f6f6;
   border-radius: 25px;
   margin-top: 50px;
-  padding-top: 50px;
-  padding-bottom: 150px;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
   margin-bottom: 50px;
+  padding: 5% 2.5%;
+}
+@media (max-width: 460px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=locationlist.css.map */

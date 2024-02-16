@@ -13,16 +13,19 @@
     .image-title {
         position: absolute;
         width: 88%;
-        height: 15%;
-        top: 79%;
         left: 6%;
         font-weight: 700;
         font-size: 18px;
         color: white;
+        margin: 0;
+        bottom: 2.5%;
     }
     img {
         object-fit: cover;
         height: 100%;
         width: 100%;
+    }
+    @media (max-width: 460px) {
+        aspect-ratio: 335/255;
     }
 }
