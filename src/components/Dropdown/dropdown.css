@@ -44,4 +44,16 @@
 }
 .dropdown li {
   list-style-type: none;
+}
+@media (max-width: 460px) {
+  .dropdown .dropdownTop {
+    font-size: 13px;
+    padding: 3px 10px 3px 10px;
+  }
+  .dropdown .btnValeurs img {
+    width: 16px;
+  }
+  .dropdown .dropdownText {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=dropdown.css.map */

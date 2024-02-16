@@ -17,4 +17,13 @@
         background-color: #ff6060;
         color: white;
     }
+    @media (max-width: 460px) {
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        li{
+            font-size: 10px;
+            min-width: 84px;
+        }
+    }
 }

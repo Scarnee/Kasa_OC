@@ -14,4 +14,18 @@
   height: 64px;
   width: 64px;
   border-radius: 32px;
+}
+@media (max-width: 460px) {
+  .host {
+    width: 50%;
+    justify-content: space-evenly;
+  }
+  .host .hostName {
+    font-size: 12px;
+  }
+  .host .hostPicture {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+  }
 }/*# sourceMappingURL=host.css.map */

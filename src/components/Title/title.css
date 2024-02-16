@@ -14,4 +14,12 @@
   color: #000;
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 460px) {
+  .mainTitle .title {
+    font-size: 18px;
+  }
+  .mainTitle .location {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=title.css.map */

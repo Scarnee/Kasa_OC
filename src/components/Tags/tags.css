@@ -17,4 +17,15 @@
   border-radius: 12.5px;
   background-color: #ff6060;
   color: white;
+}
+@media (max-width: 460px) {
+  .tagsList {
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+  }
+  .tagsList li {
+    font-size: 10px;
+    min-width: 84px;
+  }
 }/*# sourceMappingURL=tags.css.map */

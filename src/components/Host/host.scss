@@ -13,4 +13,17 @@
         width: 64px;
         border-radius: 32px;
     }
+    @media (max-width: 460px) {
+        width: 50%;
+        justify-content: space-evenly;
+        .hostName{
+            font-size: 12px;
+        }
+        .hostPicture{
+            height: 32px;
+            width: 32px;
+            border-radius: 16px;
+        }
+        
+    }
 }

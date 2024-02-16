@@ -41,4 +41,22 @@
   justify-content: space-evenly;
   width: 50%;
   align-items: end;
+}
+@media (max-width: 460px) {
+  .mainLocation .informations {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mainLocation .details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mainLocation .informationsLeft, .mainLocation .informationsRight {
+    width: 100% !important;
+  }
+  .mainLocation .informationsRight {
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
 }/*# sourceMappingURL=location.css.map */

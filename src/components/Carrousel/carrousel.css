@@ -3,6 +3,7 @@
   height: 600px;
   position: relative;
   overflow: hidden;
+  border-radius: 25px;
 }
 .carrousel .hidden {
   display: none;
@@ -66,4 +67,15 @@
   font-size: 18px;
   color: white;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+@media (max-width: 460px) {
+  .carrousel {
+    height: 255px;
+  }
+  .carrousel .countCarrousel {
+    display: none;
+  }
+  .carrousel .btnDecrease img, .carrousel .btnIncrease img {
+    height: 20px;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

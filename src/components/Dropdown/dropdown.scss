@@ -44,4 +44,16 @@
     li{
         list-style-type: none;
     }
+    @media (max-width: 460px){
+        .dropdownTop{
+            font-size: 13px;
+            padding: 3px 10px 3px 10px;
+        }
+        .btnValeurs img{
+            width: 16px;
+        }
+        .dropdownText{
+            font-size: 11px;
+        }
+    }
 }
