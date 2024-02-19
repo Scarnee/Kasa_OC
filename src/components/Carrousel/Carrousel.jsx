@@ -5,7 +5,6 @@ import forwardArrow from "../../assets/forwardArrow.svg";
 
 function Carrousel({ Array }) {
     let arrayLength = Array.length;
-    console.log(arrayLength);
 
     const [index, setIndex] = useState(0);
 

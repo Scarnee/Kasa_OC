@@ -8,6 +8,9 @@ header {
   margin-bottom: 50px;
   gap: 10%;
 }
+header a.active {
+  text-decoration: underline;
+}
 header .logo {
   width: 45%;
   height: 100%;

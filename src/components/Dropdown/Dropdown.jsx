@@ -10,8 +10,8 @@ function Dropdown({ title, text }) {
     }
 
     return (
-        <div className="dropdown" onClick={handleOpen}>
-            <div className="dropdownTop">
+        <div className="dropdown" >
+            <div className="dropdownTop" onClick={handleOpen}>
                 <p className="dropdownTitle">{title}</p>
                 <button className={"btnValeurs" + (open ? " btnOpen" : "")}>
                     <img src={Arrow} alt="arrow"></img>

@@ -1,21 +1,20 @@
 import "./Header.css";
 import Logo from "../../assets/LOGO.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
     return (
         <header>
             <div className="logo">
-                <img src={Logo} alt="logoKasa"></img>
+                <Link to="/"><img src={Logo} alt="logoKasa"></img></Link>
             </div>
             <nav className="navigationBar">
                 <ul>
                     <li>
-                        <Link to="/">Accueil</Link>
+                        <NavLink to="/">Accueil</NavLink>
                     </li>{" "}
-                    {/*prop isActive*/}
                     <li>
-                        <Link to="/about">A Propos</Link>
+                        <NavLink to="/about">A Propos</NavLink>
                     </li>
                 </ul>
             </nav>
