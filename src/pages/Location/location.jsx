@@ -1,6 +1,4 @@
 import { useParams } from "react-router-dom";
-const response = await fetch("data.json");
-const data = await response.json();
 import "./location.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import React, { useState, useEffect } from "react";
@@ -11,35 +9,47 @@ import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
 
 function Location() {
+    const [data, setData] = useState([]);
     let { id } = useParams();
-    let object = data.filter((elem) => elem.id === id)[0];
+    console.log(id);
 
-    let [equipments, setEquipments] = useState([]);
+    const getData = async () => {
+        const response = await fetch("../../data.json");
+        console.log(response);
+        const responseData = await response.json();
+        console.log(responseData);
+        let object = responseData.find((elem) => elem.id === id)[0];
+        console.log(object)
+        setData(object);
+        console.log(data)
+    };
+    /*useEffect(() => {
+        getData();
+    }, []);*/
+    getData()
 
-    useEffect(() => {
-        setEquipments(object.equipments);
-    }, []);
+    console.log(data)
 
     return (
         <div className="mainLocation">
-            <Carrousel Array={object.pictures} />
+            <Carrousel Array={data.pictures} />
             <div className="informations">
                 <div className="informationsLeft">
-                    <Title title={object.title} location={object.location} />
-                    <Tags tagList={object.tags} />
+                    <Title title={data.title} location={data.location} />
+                    <Tags tagList={data.tags} />
                 </div>
                 <div className="informationsRight">
-                    <Host picture={object.host.picture} name={object.host.name} />
-                    <Rating rating={object.rating} />
+                    <Host picture={data?.host.picture} name={data.host.name} />
+                    <Rating rating={data.rating} />
                 </div>
             </div>
             <div className="details">
-                <Dropdown title="Description" text={object.description} />
+                <Dropdown title="Description" text={data.description} />
                 <Dropdown
                     title="Equipements"
                     text={
                         <ul>
-                            {equipments.map((equipment) => (
+                            {data?.equipment.map((equipment) => (
                                 <li>{equipment}</li>
                             ))}
                         </ul>

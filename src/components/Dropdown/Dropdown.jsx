@@ -17,7 +17,7 @@ function Dropdown({ title, text }) {
                     <img src={Arrow} alt="arrow"></img>
                 </button>
             </div>
-             <div className={(open ? "dropdownText":"hidden")}>{text}</div>
+             <div className={(open ? "dropdownText":"textHidden")}>{text}</div>
         </div>
     );
 }
