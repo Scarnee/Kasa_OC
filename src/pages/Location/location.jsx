@@ -10,8 +10,8 @@ import Rating from "../../components/Rating/Rating";
 
 function Location() {
     const { id } = useParams();
-    const { data } = getData('/../data.json');
-    console.log(data)
+    const { data } = getData("/../data.json");
+    console.log(data);
 
     if (data.length === 0) return;
 
@@ -19,8 +19,7 @@ function Location() {
         if (apart.id === id) return apart;
     })[0];
 
-
-    if (!object) return <Navigate to="*"  />;
+    if (!object) return <Navigate to="*" />;
 
     return (
         <div className="mainLocation">
@@ -36,21 +35,11 @@ function Location() {
                 </div>
             </div>
             <div className="details">
-                <Dropdown title="Description" text={object?.description} />
-                <Dropdown
-                    title="Equipements"
-                    text={
-                        <ul>
-                            {object.equipments?.map((equipment) => (
-                                <li key={equipment}>{equipment}</li>
-                            ))}
-                        </ul>
-                    }
-                />
+                <Dropdown title="Description" text={[object?.description]} />
+                <Dropdown title="Equipements" text={object?.equipments} />
             </div>
         </div>
     );
 }
 
 export default Location;
-

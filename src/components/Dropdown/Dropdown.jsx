@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Arrow from "../../assets/arrow.svg";
 import "./dropdown.css";
 
@@ -7,21 +7,19 @@ function Dropdown({ title, text }) {
 
     function handleOpen() {
         setOpen(!open);
-        let dropdownText = document.querySelector('.dropdown .dropdownText')
-        let dropdownTop = document.querySelector('.dropdown.dropdownTop')
-        let childElement = document.getElementById(`#${title}`).children[0]
+        let dropdownText = document.querySelector(`#${title} .dropdownText`)
+        let dropdownTop = document.querySelector(`#${title} .dropdownTop`)
+        let childElement = document.querySelector(`#${title} .dropdownText ul`)
 
-        console.log(childElement)
-        console.log(dropdownTop)
-        if (dropdownText.style.height === '' || dropdownText.style.height === 0){
+        if (dropdownText.style.height === '' || dropdownText.style.height === '0px'){
             dropdownText.style.height = `${childElement.offsetHeight}px`;
             dropdownTop.style.borderBottomLeftRadius = '0px'
             dropdownTop.style.borderBottomRightRadius = '0px'
             
         } else {
             dropdownText.style.height = '0px'
-            dropdownTop.style.borderBottomLeftRadius = '25px'
-            dropdownTop.style.borderBottomRightRadius = '25px'
+            dropdownTop.style.borderBottomLeftRadius = '7px'
+            dropdownTop.style.borderBottomRightRadius = '7px'
         }
     }
 
@@ -33,7 +31,13 @@ function Dropdown({ title, text }) {
                     <img src={Arrow} alt="arrow"></img>
                 </button>
             </div>
-             <div  className="dropdownText" style={{height : open ? "100%":"0px", visibility : open ? "visible":"hidden"} } >{text}</div>
+             <div  className="dropdownText">
+                <ul>
+                    {text.map(content =>{
+                        return <li key={content}>{content}</li>
+                    })}
+                </ul>
+             </div>
         </div>
     );
 }

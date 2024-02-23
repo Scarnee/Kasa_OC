@@ -12,16 +12,6 @@
   gap: 5%;
   width: 90%;
 }
-.mainLocation .dropdown ul {
-  flex-direction: column;
-  gap: 10px;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
-.mainLocation .dropdown ul li {
-  text-align: left;
-}
 .mainLocation .informations {
   display: flex;
   flex-direction: row;
