@@ -3,8 +3,8 @@ import "./carrousel.css";
 import backArrow from "../../assets/backArrow.svg";
 import forwardArrow from "../../assets/forwardArrow.svg";
 
-function Carrousel({ Array }) {
-    let arrayLength = Array.length;
+function Carrousel({ pictures }) {
+    let arrayLength = pictures.length;
 
     const [index, setIndex] = useState(0);
 
@@ -24,7 +24,7 @@ function Carrousel({ Array }) {
     }
     return (
         <div className="carrousel">
-            <img src={Array[index]} className="imgCarrousel"></img>
+            <img src={pictures[index]} className="imgCarrousel"></img>
             <button onClick={decreaseIndex} className={"btnDecrease" + (arrayLength == 1 ? " hidden" : "")}>
                 <img src={backArrow} alt="backArrow"></img>
             </button>

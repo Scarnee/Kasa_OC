@@ -4,4 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main-about .listValeurs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 80%;
+  height: auto;
+  padding: 0;
 }/*# sourceMappingURL=about.css.map */

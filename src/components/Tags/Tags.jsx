@@ -11,7 +11,7 @@ function Tags({tagList}) {
     return (
         <ul className="tagsList">
             {tags.map((tag) => (
-                <li>{tag}</li>
+                <li key={tag}>{tag}</li>
             ))}
         </ul>
     );

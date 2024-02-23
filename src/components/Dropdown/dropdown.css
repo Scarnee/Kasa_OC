@@ -5,16 +5,16 @@
   position: relative;
 }
 .dropdown .dropdownTop {
-  background-color: #ff6060;
-  color: white;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  background-color: #ff6060;
+  padding: 12px 20px;
+  border-radius: 7px;
+  transition: all 0.2s;
   font-size: 24px;
   font-weight: 700;
-  padding: 10px 20px 10px 15px;
+  color: white;
 }
 .dropdown .dropdownTitle {
   margin: 0;
@@ -26,26 +26,24 @@
   flex-shrink: 0;
   background-color: transparent;
   color: white;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 .dropdown .btnValeurs.btnOpen {
   transform: rotate(-180deg);
 }
 .dropdown .dropdownText {
-  color: black;
-  text-align: left;
-  background-color: #f6f6f6;
-  padding: 10px;
-  border-radius: 0px 0px 5px 5px;
-  max-height: 100vh;
-  visibility: visible;
-  transition: max-height 0.5s;
-}
-.dropdown .textHidden {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: green;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   overflow: hidden;
-  max-height: 0;
+  transition: all 200ms;
+  height: 0px;
+  padding: 10px;
 }
-.dropdown li {
+.dropdown .dropdownText li {
   list-style-type: none;
 }
 @media (max-width: 460px) {
