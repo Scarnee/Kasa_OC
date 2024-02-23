@@ -61,7 +61,7 @@
   .dropdown .btnValeurs img {
     width: 16px;
   }
-  .dropdown .dropdownText {
+  .dropdown .dropdownText ul li {
     font-size: 11px;
   }
 }/*# sourceMappingURL=dropdown.css.map */

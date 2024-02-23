@@ -18,6 +18,7 @@
   font-weight: bold;
   font-style: normal;
   margin: 0;
+  max-width: 80%;
 }
 .mainError h2 {
   color: #ff6060;
@@ -27,6 +28,7 @@
   font-weight: 500;
   line-height: 142.6%;
   text-align: center;
+  max-width: 80%;
 }
 .mainError .homeLink {
   color: #000;
@@ -45,5 +47,10 @@
   }
   .mainError .homeLink {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) and (min-width: 461px) {
+  .mainError h1 {
+    font-size: 150px;
   }
 }/*# sourceMappingURL=Error.css.map */

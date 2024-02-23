@@ -25,6 +25,7 @@ header {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        width: 100%;
         gap: 57px;
         height: 100%;
         text-align: right;
@@ -45,10 +46,16 @@ header {
         list-style-type: none;
     }
     @media (max-width: 460px) {
-            
+            height: 47px;
             a{
                 font-size: 12px;
                 text-transform: uppercase;
+            }
+            .navigationBar{
+                width: 50%;
+            }
+            .navigationBar ul{
+                gap: 10px;
             }
             
         

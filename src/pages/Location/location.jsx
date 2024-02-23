@@ -1,6 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
 import { getData } from "../../utils/GetData";
-import "./location.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Title from "../../components/Title/Title";
@@ -8,17 +7,23 @@ import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
 
+import "./location.css";
+
 function Location() {
+    // Getting element ID through URL
     const { id } = useParams();
+
+    // Getting locations data through getData function
     const { data } = getData("/../data.json");
-    console.log(data);
 
     if (data.length === 0) return;
 
+    // Filtering through array to find corresponding ID
     let object = data.filter((apart) => {
         if (apart.id === id) return apart;
     })[0];
 
+    // Navigating to error page if no corresponding ID was find in json file
     if (!object) return <Navigate to="*" />;
 
     return (

@@ -1,18 +1,16 @@
 import Thumbnail from "../Thumbnail/Thumbnail";
-import React, { useState, useEffect } from "react";
-import './locationlist.css'
 import { getData } from "../../utils/GetData";
 
+import "./locationlist.css";
 
 const LocationList = () => {
+    // Importing data through getData function
+    const { data } = getData("/data.json");
 
-    const {data} = getData('/data.json')
-    
-
-    
     return (
         <div className="gallery">
-            {data.map((location) => (  
+            {/* Mapping on data and calling Thumbnail element on it with right props */}
+            {data.map((location) => (
                 <Thumbnail id={location.id} title={location.title} cover={location.cover} key={location.id} />
             ))}
         </div>

@@ -27,6 +27,7 @@ header ul {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   gap: 57px;
   height: 100%;
   text-align: right;
@@ -46,8 +47,17 @@ header li {
   list-style-type: none;
 }
 @media (max-width: 460px) {
+  header {
+    height: 47px;
+  }
   header a {
     font-size: 12px;
     text-transform: uppercase;
+  }
+  header .navigationBar {
+    width: 50%;
+  }
+  header .navigationBar ul {
+    gap: 10px;
   }
 }/*# sourceMappingURL=Header.css.map */

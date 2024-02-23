@@ -1,13 +1,14 @@
-import React from 'react'
-import './title.css'
+import React from "react";
 
-function Title({title, location}) {
-  return (
-    <div className='mainTitle'>
-        <p className='title'>{title}</p>
-        <p className='location'>{location}</p>
-    </div>
-  )
+import "./title.css";
+
+function Title({ title, location }) {
+    return (
+        <div className="mainTitle">
+            <p className="title">{title}</p>
+            <p className="location">{location}</p>
+        </div>
+    );
 }
 
-export default Title
+export default Title;
